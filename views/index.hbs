@@ -1,0 +1,27 @@
+<h2>Hot Dogs</h2>
+
+{{#if hotdogs.length}}
+<ul>
+    {{#each hotdogs}}
+        <li class="hotdog">
+            <div>
+                <img style="width: 60px;" src="../img/{{img}}" alt="">
+                <span class="completed">{{title}}</span>
+            </div>
+            <div class="formb">
+            <form action="/complete" method="POST">
+                    <input type="hidden" value="{{_id}}" name="id">
+                    <a href="/update?title={{title}}" class="btn" type="submit">Update</a>
+            </form>
+            <form action="/delete" method="POST">
+                    <input type="text" name="title" hidden value="{{title}}">
+                    <button type="submit" class="btn">Delete</button>
+            </form>
+            </div>
+        </li>
+
+    {{/each}}
+</ul>
+{{else}}
+<p>No Hot Dogs!</p>
+{{/if}}

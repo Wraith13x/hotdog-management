@@ -1,0 +1,42 @@
+.hotdog {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f3f3;
+    padding: 1rem;
+  }
+  .hotdog div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .formb {
+    float: right;
+    justify-content: flex-end;
+  }
+  .btn {
+    margin: 0px 7px;
+    background: rgb(177, 6, 6);
+  }
+  .btn:hover {
+    background: rgb(128, 5, 5);
+  }
+  .hotdog span.completed {
+    font-weight: bolder;
+    margin-left: 7px;
+  }
+  
+  .hotdog i {
+    z-index: 2;
+  }
+
+  .img-label img {
+    border: 2px solid #fff;
+  }
+
+  .img-label input:checked+img {
+    border: 2px solid rgba(0,0,0, .3);
+  }

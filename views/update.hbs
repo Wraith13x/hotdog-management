@@ -1,0 +1,22 @@
+<form action="/update" method="POST">
+    <h2>Update a Hot Dog</h2>
+    <div class="input-field">
+        <input type="text" name="oldTitle" hidden value="{{hotDogTitle}}">
+        <input type="text" required name="title" value="{{hotDogTitle}}">
+        <label></label>
+    </div>
+    <label class="img-label">
+        <input type="radio" name="img" value="hotdogket.png" checked>
+        <img style="width: 60px;" src="../img/hotdogket.png" alt="">
+    </label>
+    <label class="img-label">
+        <input type="radio" name="img" value="hotdogmus.png">
+        <img style="width: 60px;" src="../img/hotdogmus.png" alt="">
+    </label>
+    <label class="img-label">
+        <input type="radio" name="img" value="hotdogket_mus.png">
+        <img style="width: 60px;" src="../img/hotdogket_mus.png" alt="">
+    </label>
+    <button type="submit" class="btn">Update</button>
+
+</form>
