@@ -1,9 +1,10 @@
-const PORT = process.env.PORT || 3000;
 const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
 const exphbs = require('express-handlebars')
 const hotdogRoutes = require('./routes/hotdogs')
+
+const PORT = process.env.PORT || 3000;
 
 const app = express()
 const hbs = exphbs.create({
